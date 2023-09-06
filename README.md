@@ -1,6 +1,6 @@
 ## BACKEND ENGINEERING TASK
 
-This project is a challange proposed by Payever for the position of Back-end Engineer. It`s a task to create a simple REST application from scratch, using Nest.js, Typescript, MongoDB, RabbitMQ and communicating with an external API (https://reqres.in/) .
+This project is a challange proposed by Payever for the position of Back-end Engineer. It`s a task to create a simple REST application from scratch, using Nest.js, Typescript, MongoDB, RabbitMQ and communicating with an external API (<https://reqres.in/>) .
 
 ## Technologies  
 
@@ -23,25 +23,32 @@ This request will bring data from an external API and returns a user based on us
 3. GET /api/user/{userId}/avatar  
 This resquest will bring an image from the 'user.data', store the image in the File System and generate a hash that will be used to name the .jpg file and also the 'user.avatar' value.
 4. DELETE /api/user/{userId}/avatar  
-This request will remove the image file from the File System storage and 'user.avatar' *MongoDB* entry. 
+This request will remove the image file from the File System storage and 'user.avatar' *MongoDB* entry.
 
-## AUTOMATION:
+## AUTOMATION
+
 To run the automated tests, in any environment you are, run:
 
 ``` bash
 npm run test
 ```
+
 ``` bash
 npm run test:cov
-``` 
+```
+
 *npm run test:cov* will give you the coverage of unit tests. For this project, the only missing one is the *users.service.ts* file. Which will be done sooner as possible.
 
-## IMPORTANT TO REMEMBER:
-To start *MongoDB* database, open a prompt and type: 
+## IMPORTANT TO REMEMBER
+
+To start *MongoDB* database, open a prompt and type:
+
 ``` bash
 mongosh databaseName
 ```
+
 On my case:
+
 ``` bash
 mongosh nest
 ```
