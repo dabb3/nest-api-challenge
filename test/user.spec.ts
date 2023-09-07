@@ -33,7 +33,7 @@ describe('UserController (Integration tests with all endpoints)', () => {
   });
 
   describe('1. POST /api/users', () => {
-    it('should throw a validation error if a required parameter is missing', async () => {
+    it('must throw a validation error if a required parameter is missing', async () => {
       const requestBody = {
         first_name: 'John',
         last_name: 'Doe',
@@ -54,7 +54,7 @@ describe('UserController (Integration tests with all endpoints)', () => {
       }
     });
 
-    it('should throw a validation error if provided an invalid email value', async () => {
+    it('must throw a validation error if provided an invalid email value', async () => {
       const requestBody = {
         email: 'email.com',
         first_name: 'John',
@@ -76,7 +76,7 @@ describe('UserController (Integration tests with all endpoints)', () => {
       }
     });
 
-    it('should store user in collection, send a welcome email message and a RabbitMQ event', async () => {
+    it('must store user in collection, send a welcome email message and a RabbitMQ event', async () => {
       const requestBody = {
         email: 'johndoe@email.com',
         first_name: 'John',
@@ -98,7 +98,7 @@ describe('UserController (Integration tests with all endpoints)', () => {
   });
 
   describe('2. GET /api/user/{userId}', () => {
-    it('should retrieve data from external API and return a user as JSON', async () => {
+    it('must retrieve data from external API and return a user as JSON', async () => {
       const axiosInstance = axios.create();
       try {
         const response = await axiosInstance.get(
@@ -112,7 +112,7 @@ describe('UserController (Integration tests with all endpoints)', () => {
       }
     });
 
-    it('should return a server error if userId is greater than 12', async () => {
+    it('must return a server error if userId is greater than 12', async () => {
       const axiosInstance = axios.create({
         validateStatus: () => true,
       });

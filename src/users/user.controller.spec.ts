@@ -75,11 +75,11 @@ describe('UserController', () => {
     controller = module.get<UserController>(UserController);
   });
 
-  it('should be defined', () => {
+  it('must be defined', () => {
     expect(controller).toBeDefined();
   });
 
-  it('should create a user', () => {
+  it('must create a user', () => {
     const newUser: CreateUserDto = {
       first_name: 'Rafael',
       last_name: 'Barbu',

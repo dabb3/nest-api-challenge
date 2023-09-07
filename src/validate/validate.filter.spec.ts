@@ -9,7 +9,7 @@ describe('ValidationFilter', () => {
   });
 
   describe('catch', () => {
-    it('should set the response status code to 400', () => {
+    it('must set the response status code to 400', () => {
       const exception = new BadRequestException('Validation failed');
       const response = {
         status: jest.fn().mockReturnThis(),
