@@ -41,31 +41,35 @@ npm run test:cov
 
 ## HOW TO SEE RABBITMQ EVENT SENDING EMAIL?
 
-Create an account on (https://app.sendgrid.com)
+Create an account on - [Send Grid](<https://app.sendgrid.com>) .
 Configure your account and configure the *apikeys* username and password.
 Configure a *.env* file using those params configured:
 
-*For MongoDB configuration use:*
+1. For MongoDB configuration use:
 MONGO_URI=mongodb://127.0.0.1:27017/yourDatabaseName?directConnection=true
-
-*For Mailer configuration use:*
+2. For Mailer configuration use:
 MAILER_HOST=smtp.sendgrid.net
-*default value for MAILER_USER:*
+3. default value for MAILER_USER:
 MAILER_USER=apikey
-*Your apikey password that Send Grid will provide you:*
+4. Your apikey password that Send Grid will provide you:
 MAILER_PASS=(put here apikey password)
-*default value for MAILER_PORT:*
+5. default value for MAILER_PORT:
 MAILER_PORT=465
-
-*For Rabbit configuration use:*
+6. For Rabbit configuration use:
 RABBITMQ_URL=amqp://localhost:5672
 
-After configuring all those params with your information, run the application and send and *post* request on **POSTMAN**.
+After configuring all those params with your information, run the application and send and *post* request on *POSTMAN*.
+
 Verify if your sent data was created on local *MongoDB* database first.
+
 Once the data is created, go to Send Grid and log in.
-You will see **Suppressions** dropdown option on left down.
-After clicking it, the drpdown will show you and **Invalid** option to click.
+
+You will see *Suppressions* dropdown option on left down.
+
+After clicking it, the drpdown will show you and *Invalid* option to click.
+
 After clicking it, a new *Invalid Emails* screen will be opened.
+
 You can check your dummy email on that screen.
 
 ## IMPORTANT TO REMEMBER
