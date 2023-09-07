@@ -25,9 +25,9 @@ This resquest will bring an image from the 'user.data', store the image in the F
 4. DELETE /api/user/{userId}/avatar  
 This request will remove the image file from the File System storage and 'user.avatar' *MongoDB* entry.
 
-## AUTOMATION
+## TESTING
 
-To run the automated tests, in any environment you are, run:
+To run the tests, in any environment, use:
 
 ``` bash
 npm run test
