@@ -2,7 +2,7 @@
 
 This project is a challange proposed by Payever for the position of Back-end Engineer. It`s a task to create a simple REST application from scratch, using Nest.js, Typescript, MongoDB, RabbitMQ and communicating with an external API (<https://reqres.in/>) .
 
-## Technologies  
+## TECHNOLOGIES  
 
 I used in this project, those technologies:
 
@@ -85,7 +85,7 @@ npm run test:cov
 5. Verify if your sent data was created on local *MongoDB* database first.
 6. Once the data is created, go to Send Grid and log in.
 7. You will see *Suppressions* dropdown option on left down.
-8. After clicking it, the drpdown will show you and *Invalid* option to click.
+8. After clicking it, the dropdown will show you and *Invalid* option to click.
 9. After clicking it, a new *Invalid Emails* screen will be opened.
 10. You can check your dummy email on that screen.
 
@@ -106,3 +106,7 @@ mongosh nest
 After installing RabbitMQ, search for *RabbitMQService - start* on windows search bar to start RabbitMQ.
 The same process can be done by *RabbitMQService - stop* to stop RabbitMQ.
 I used *MongoDB* and *RabbitMQ* locally. No cloud framework was used in this project.
+
+## FINAL CONSIDERATIONS
+
+It took me almost two days to fix all the problems and understand how an event via RabbitMQ works, the most annoying part to solve was sending the email after the post request was sent because my data was being created in my local MongoDB database but the event was not being sent, after many attempts, a lot of reading and spending a lot of time on stackoverflow, I managed to get the events to work.
