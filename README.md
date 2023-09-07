@@ -1,6 +1,6 @@
 ## BACKEND ENGINEERING TASK
 
-This project is a challange proposed by Payever for the position of Back-end Engineer. It`s a task to create a simple REST application from scratch, using Nest.js, Typescript, MongoDB, RabbitMQ and communicating with an external API (<https://reqres.in/>) .
+This project is a challenge proposed by Payever for the position of Back-end Engineer. It`s a task to create a simple REST application from scratch, using Nest.js, Typescript, MongoDB, RabbitMQ and communicating with an external API (<https://reqres.in/>) .
 
 ## TECHNOLOGIES  
 
