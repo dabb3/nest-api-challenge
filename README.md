@@ -45,17 +45,17 @@ npm run test:cov
 2. Configure your account and configure the *apikeys* username and password.
 3. Configure a *.env* file using those params configured:
 
-    *For MongoDB configuration use:*
+    For MongoDB configuration use:
     MONGO_URI=mongodb://127.0.0.1:27017/yourDatabaseName?directConnection=true
-    *For Mailer configuration use:*
+    For Mailer configuration use:
     MAILER_HOST=smtp.sendgrid.net
-    *Default value for MAILER_USER:*
+    Default value for MAILER_USER:
     MAILER_USER=apikey
-    *Your apikey password that Send Grid will provide you:*
+    Your apikey password that Send Grid will provide you:
     MAILER_PASS=(put here apikey password)
-    *Default value for MAILER_PORT:*
+    Default value for MAILER_PORT:
     MAILER_PORT=465
-    *For Rabbit configuration use:*
+    For Rabbit configuration use:
     RABBITMQ_URL=amqp://localhost:5672
 
 4. After configuring all those params with your information, run the application and send and *post* request on *POSTMAN*.
