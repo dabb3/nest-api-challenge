@@ -46,17 +46,40 @@ npm run test:cov
 3. Configure a *.env* file using those params configured:
 
     For MongoDB configuration use:
+
+    ``` bash
     MONGO_URI=mongodb://127.0.0.1:27017/yourDatabaseName?directConnection=true
+    ```
+
     For Mailer configuration use:
+
+    ``` bash
     MAILER_HOST=smtp.sendgrid.net
+    ```
+
     Default value for MAILER_USER:
+
+    ``` bash
     MAILER_USER=apikey
+    ```
+
     Your apikey password that Send Grid will provide you:
-    MAILER_PASS=(put here apikey password)
+
+    ``` bash
+    MAILER_PASS=put here apikey password
+    ```
+
     Default value for MAILER_PORT:
+
+    ``` bash
     MAILER_PORT=465
+    ```
+
     For Rabbit configuration use:
+
+    ``` bash
     RABBITMQ_URL=amqp://localhost:5672
+    ```
 
 4. After configuring all those params with your information, run the application and send and *post* request on *POSTMAN*.
 5. Verify if your sent data was created on local *MongoDB* database first.
